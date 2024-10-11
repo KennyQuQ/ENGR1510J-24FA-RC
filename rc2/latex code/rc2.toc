@@ -1,6 +1,6 @@
-\beamer@sectionintoc {1}{Playbook Review}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{C2}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{C3}{17}{0}{1}
-\beamer@sectionintoc {2}{Worksheet Review}{29}{0}{2}
-\beamer@subsectionintoc {2}{1}{W3}{29}{0}{2}
-\beamer@sectionintoc {3}{Referencing}{49}{0}{3}
+\beamer@sectionintoc {1}{Playbook Review}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{C2}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{C3}{18}{0}{1}
+\beamer@sectionintoc {2}{Worksheet Review}{30}{0}{2}
+\beamer@subsectionintoc {2}{1}{W3}{30}{0}{2}
+\beamer@sectionintoc {3}{Referencing}{50}{0}{3}

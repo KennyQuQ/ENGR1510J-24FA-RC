@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1728657243 "/mnt/c/Users/X16/ENGR1510J-24FA-RC/rc2/latex code/rc2.tex" "rc2.pdf" "rc2" 1728657254 0
+["pdflatex"] 1728657796 "/mnt/c/Users/X16/ENGR1510J-24FA-RC/rc2/latex code/rc2.tex" "rc2.pdf" "rc2" 1728657807 0
   "/etc/texmf/web2c/texmf.cnf" 1715921121 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/mnt/c/Users/X16/ENGR1510J-24FA-RC/rc2/latex code/rc2.tex" 1728657242 40724 7f63d23e2f1dbc86a8c2c1cb8d4dab88 ""
+  "/mnt/c/Users/X16/ENGR1510J-24FA-RC/rc2/latex code/rc2.tex" 1728657795 40910 91b9cd40b2fe5c0283508de6a3ea9d38 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc" 1561498186 2880 c07f4a1ce14a88d4ebe18f1c7b4592c1 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc" 1561498186 2876 59df564f2929ccd7d2b24aa7d14cad04 ""
@@ -254,11 +254,11 @@
   "ex4.png" 1728268725 55002 7e65b88667944386a23184c50ee5f945 ""
   "ex6_recursion_diagram.jpg" 1728167963 18427 efb9d4f7f1a829b257705c69319cafac ""
   "iter_recur.png" 1728282334 83762 a4badb005b0a2c3a0fb19601db3f3e83 ""
-  "rc2.aux" 1728657254 8807 65dde645276da7333ab19ac0bdc7867e "pdflatex"
-  "rc2.nav" 1728657254 5698 ffeb66c5f60855b6e2bcc9f0fc12c8ce "pdflatex"
-  "rc2.out" 1728657254 548 980d8747dff0c5b3284fbe8307825632 "pdflatex"
-  "rc2.tex" 1728657242 40724 7f63d23e2f1dbc86a8c2c1cb8d4dab88 ""
-  "rc2.toc" 1728657254 286 c3dd5e922d540d677218aee9f267715e "pdflatex"
+  "rc2.aux" 1728657806 8935 88dee610d0f018dc011fa48e1f7ab627 "pdflatex"
+  "rc2.nav" 1728657806 5790 2450c58be020ba41f7417836571bd70a "pdflatex"
+  "rc2.out" 1728657806 548 c9d09bf9f3b1db7b77b5303a62c90078 "pdflatex"
+  "rc2.tex" 1728657795 40910 91b9cd40b2fe5c0283508de6a3ea9d38 ""
+  "rc2.toc" 1728657806 286 ebda73b202d2443618d86fb2fd920ab5 "pdflatex"
   "script_function.png" 1728279111 37070 7163db62f91cdf36ecd39ab781bf6058 ""
   (generated)
   "rc2.aux"
