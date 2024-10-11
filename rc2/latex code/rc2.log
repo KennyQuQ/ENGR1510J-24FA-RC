@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.10.6)  8 OCT 2024 20:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.10.6)  11 OCT 2024 22:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -900,7 +900,16 @@ Overfull \vbox (49.32584pt too high) detected at line 553
 ] [26
 
 ]
-Overfull \vbox (72.91571pt too high) detected at line 666
+LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 669.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/b/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 669.
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 669.
+
+Overfull \vbox (18.62299pt too high) detected at line 669
  []
 
 [27
@@ -913,11 +922,11 @@ Overfull \vbox (72.91571pt too high) detected at line 666
 
 ]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 729.
+(Font)              scaled to size 12.0pt on input line 732.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 729.
+(Font)              scaled to size 8.0pt on input line 732.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
-(Font)              scaled to size 6.0pt on input line 729.
+(Font)              scaled to size 6.0pt on input line 732.
  [31
 
 ] [32
@@ -926,9 +935,9 @@ LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
 
 ]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 822.
+(Font)              scaled to size 9.0pt on input line 825.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 822.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 825.
  [34
 
 ] [35
@@ -942,17 +951,17 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
 ] [39
 
 ]
-<ex4.png, id=1136, 481.29813pt x 332.24126pt>
+<ex4.png, id=1137, 481.29813pt x 332.24126pt>
 File: ex4.png Graphic file (type png)
 <use ex4.png>
-Package pdftex.def Info: ex4.png  used on input line 906.
+Package pdftex.def Info: ex4.png  used on input line 909.
 (pdftex.def)             Requested size: 308.06367pt x 212.65901pt.
  [40
 
  <./ex4.png>] [41
 
 ]
-Overfull \vbox (3.57402pt too high) detected at line 962
+Overfull \vbox (3.57402pt too high) detected at line 965
  []
 
 [42
@@ -964,10 +973,10 @@ Overfull \vbox (3.57402pt too high) detected at line 962
 ] [45
 
 ]
-<ex6_recursion_diagram.jpg, id=1309, 555.07375pt x 500.87125pt>
+<ex6_recursion_diagram.jpg, id=1310, 555.07375pt x 500.87125pt>
 File: ex6_recursion_diagram.jpg Graphic file (type jpg)
 <use ex6_recursion_diagram.jpg>
-Package pdftex.def Info: ex6_recursion_diagram.jpg  used on input line 1031.
+Package pdftex.def Info: ex6_recursion_diagram.jpg  used on input line 1034.
 (pdftex.def)             Requested size: 136.91603pt x 123.54375pt.
  [46
 
@@ -975,13 +984,16 @@ Package pdftex.def Info: ex6_recursion_diagram.jpg  used on input line 1031.
 
 ] [48
 
-] [49
+]
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 1088.
+ [49
 
 ]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 1091.
+(Font)              scaled to size 24.88pt on input line 1102.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 1091.
+(Font)              scaled to size 17.28pt on input line 1102.
  [50
 
 ]
@@ -999,18 +1011,18 @@ Package rerunfilecheck Info: File `rc2.out' has not changed.
 (rerunfilecheck)             Checksum: 980D8747DFF0C5B3284FBE8307825632;548.
  ) 
 Here is how much of TeX's memory you used:
- 23080 strings out of 476091
- 453599 string characters out of 5794081
+ 23108 strings out of 476091
+ 454057 string characters out of 5794081
  1864330 words of memory out of 5000000
- 42822 multiletter control sequences out of 15000+600000
- 543551 words of font info for 121 fonts, out of 8000000 for 9000
+ 42845 multiletter control sequences out of 15000+600000
+ 544479 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,497b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}</usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on rc2.pdf (50 pages, 1225727 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}</usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on rc2.pdf (50 pages, 1237237 bytes).
 PDF statistics:
- 1538 PDF objects out of 1728 (max. 8388607)
- 1393 compressed objects within 14 object streams
+ 1547 PDF objects out of 1728 (max. 8388607)
+ 1400 compressed objects within 14 object streams
  107 named destinations out of 1000 (max. 500000)
  291 words of extra memory for PDF output out of 10000 (max. 10000000)
 
