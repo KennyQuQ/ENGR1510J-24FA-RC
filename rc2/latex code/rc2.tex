@@ -141,13 +141,13 @@
 %	PRESENTATION INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title[Short Title]{ENGR151 Recitation Class 2} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
+\title[Computer \& Programming, MATLAB]{ENGR151 Recitation Class 2} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
 
 \subtitle{week 4} % Presentation subtitle, remove this command if a subtitle isn't required
 
-\author[James Cook \and Roald Amundsen]{Wu JiaXi} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
+\author[Wu JiaXi]{Wu JiaXi} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
 
-\institute[UC]{UM-SJTU joint institute \\ \smallskip \textit{nina$\_$nhk@sjtu.edu.cn}} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
+\institute[UM-SJTU joint institute]{UM-SJTU joint institute \\ \smallskip \textit{nina$\_$nhk@sjtu.edu.cn}} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
 
 \date[\today]{Computer $\&$ Programming, MatLab-scripting \\ \today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
 
@@ -176,6 +176,14 @@
 	%\tableofcontents[pausesections] % Output the table of contents (break sections up across separate slides)
 \end{frame}
 
+
+%----
+\begin{frame}
+    \frametitle{RC recording}
+    \href{https://sjtu.feishu.cn/minutes/obcn9p39e48eb872rv3cum1c?from=from_copylink}{[Press here is the Link]}
+    
+\end{frame}
+%----
 %----------------------------------------------------------------------------------------
 %	PRESENTATION BODY SLIDES
 %----------------------------------------------------------------------------------------
@@ -342,7 +350,7 @@
         \[
         A = \begin{bmatrix}
         1 & 2 & 3 \\
-        2 & 5 & 6\\
+        4 & 5 & 6\\
         \end{bmatrix}
         \]
     \end{center}
@@ -629,9 +637,12 @@
 %------------------------------------------------
 	\frametitle{C3 Playbook review}
     \textbf{3.2.8 What is a "seed"?}
+
     A seed is an initial value used to start a random number generator, which is like the starting point for a sequence. 
     By using a seed, you can control the sequence of "random" numbers that are produced.
+    
     \textbf{3.2.8 What is happening if the same seed is used to generated random numbers?}
+    
     If you use the same seed each time, the random number generator will produce the same sequence of numbers every time. 
     This can be useful when you want to reproduce results (for debugging or testing), but it also means the numbers aren't truly random. 
 
@@ -642,10 +653,10 @@
 \begin{frame}
     \frametitle{C3 Playbook Review}
     
-    \textbf{3.3.3 What does it mean to "print in a string"?} \\
-    "Printing in a string" refers to inserting values into a string using special formatting symbols. Instead of just printing plain text, you can include variables or values inside a string. This is done using format specifiers like \texttt{\%d} (for integers) or \texttt{\%f} (for floats).
+    \textbf{3.3.3 What does it mean to \"print in a string\"?} \\
+    \"Printing in a string\" refers to inserting values into a string using special formatting symbols. Instead of just printing plain text, you can include variables or values inside a string. This is done using format specifiers like \texttt{\%d} (for integers) or \texttt{\%f} (for floats).
     
-    \textbf{3.2.8 How to know what flags (e.g., \texttt{\%d}, \texttt{\%g}) or special characters (e.g., \texttt{\\n}, \texttt{\\t}) should be used?}
+    \textbf{3.2.8 How to know what flags (e.g., \texttt{\%d}, \texttt{\%g}) or special characters (e.g., \texttt{\textbackslash n}, \texttt{\textbackslash t}) should be used?}
     - Read the documentation for \texttt{sprintf} or \texttt{fprintf}.
     
     Format specifiers are used to format different data types:
@@ -659,8 +670,8 @@
 
     Special characters are used to control how the output looks:
     \begin{itemize}
-        \item \texttt{\\n}: Newline (moves to the next line).
-        \item \texttt{\\t}: Tab (inserts a horizontal tab space).
+        \item \texttt{\textbackslash n}: Newline (moves to the next line).
+        \item \texttt{\textbackslash b}: Tab (inserts a horizontal tab space).
     \end{itemize}
 
 \end{frame}
@@ -1068,12 +1079,20 @@
 %------------------------------------------------
 \section{Referencing}
 
-\begin{frame} 
+\begin{frame} % Use [allowframebreaks] to allow automatic splitting across slides if the content is too long
 	\frametitle{References}
 	
 	\begin{itemize}
-        \item Manuel.
-    \end{itemize}
+    
+
+    \item Manuel. \textit{c2.pdf}. JI Canvas, 2024. \href{https://jicanvas.com/courses/917/files/folder/lectures?preview=333612}{[Link]}.
+
+    \item Manuel. \textit{c3.pdf}. JI Canvas, 2024. \href{https://jicanvas.com/courses/917/files/folder/lectures?preview=333613}{[Link]}.
+
+    \item Manuel. \textit{w3.pdf}. JI Canvas, 2024. \href{https://jicanvas.com/courses/917/files/folder/worksheets?preview=333631}{[Link]}.
+
+    \item Wang, Yuheng. \textit{rc}. FOCS JI Gitea, 2023. \href{https://focs.ji.sjtu.edu.cn/git/engr151-23fa/course-support/src/branch/master/rc}{[Link]}.
+\end{itemize}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
