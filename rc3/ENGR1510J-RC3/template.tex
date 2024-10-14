@@ -1,0 +1,1181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 2.0 (March 8, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	11pt, % Set the default font size, options include: 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+	%t, % Uncomment to vertically align all slide content to the top of the slide, rather than the default centered
+	%aspectratio=169, % Uncomment to set the aspect ratio to a 16:9 ratio which matches the aspect ratio of 1080p and 4K screens and projectors
+]{beamer}
+
+\graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
+
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
+
+%----------------------------------------------------------------------------------------
+%	SELECT LAYOUT THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of default layout themes which change the colors and layouts of slides. Below is a list of all themes available, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+%----------------------------------------------------------------------------------------
+%	SELECT COLOR THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of color themes that can be applied to any layout theme to change its colors. Uncomment each of these in turn to see how they change the colors of your selected layout theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{monarca}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{spruce}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%----------------------------------------------------------------------------------------
+%	SELECT FONT THEME & FONTS
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with several font themes to easily change the fonts used in various parts of the presentation. Review the comments beside each one to decide if you would like to use it. Note that additional options can be specified for several of these font themes, consult the beamer documentation for more information.
+
+\usefonttheme{default} % Typeset using the default sans serif font
+%\usefonttheme{serif} % Typeset using the default serif font (make sure a sans font isn't being set as the default font if you use this option!)
+%\usefonttheme{structurebold} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in bold
+%\usefonttheme{structureitalicserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in italic serif
+%\usefonttheme{structuresmallcapsserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in small caps serif
+
+%------------------------------------------------
+
+%\usepackage{mathptmx} % Use the Times font for serif text
+\usepackage{palatino} % Use the Palatino font for serif text
+
+%\usepackage{helvet} % Use the Helvetica font for sans serif text
+\usepackage[default]{opensans} % Use the Open Sans font for sans serif text
+%\usepackage[default]{FiraSans} % Use the Fira Sans font for sans serif text
+%\usepackage[default]{lato} % Use the Lato font for sans serif text
+
+%----------------------------------------------------------------------------------------
+%	SELECT INNER THEME
+%----------------------------------------------------------------------------------------
+
+% Inner themes change the styling of internal slide elements, for example: bullet points, blocks, bibliography entries, title pages, theorems, etc. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useinnertheme{default}
+\useinnertheme{circles}
+%\useinnertheme{rectangles}
+%\useinnertheme{rounded}
+%\useinnertheme{inmargin}
+
+%----------------------------------------------------------------------------------------
+%	SELECT OUTER THEME
+%----------------------------------------------------------------------------------------
+
+% Outer themes change the overall layout of slides, such as: header and footer lines, sidebars and slide titles. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useoutertheme{default}
+%\useoutertheme{infolines}
+%\useoutertheme{miniframes}
+%\useoutertheme{smoothbars}
+%\useoutertheme{sidebar}
+%\useoutertheme{split}
+%\useoutertheme{shadow}
+%\useoutertheme{tree}
+%\useoutertheme{smoothtree}
+
+%\setbeamertemplate{footline} % Uncomment this line to remove the footer line in all slides
+%\setbeamertemplate{footline}[page number] % Uncomment this line to replace the footer line in all slides with a simple slide count
+
+%\setbeamertemplate{navigation symbols}{} % Uncomment this line to remove the navigation symbols from the bottom of all slides
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title[Advanced Matlab, Plotting \& Structures]{ENGR1510J Recitation Class} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
+
+\subtitle{Week 5} % Presentation subtitle, remove this command if a subtitle isn't required
+
+\author[Su Qijian]{Su Qijian} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
+
+\institute[UM-SJTU JI]{UM-SJTU Joint Institute} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
+
+\date[\today]{Advanced Matlab, Plotting \& Structures \\ \vspace{1cm} \today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS SLIDE
+%----------------------------------------------------------------------------------------
+
+% The table of contents outputs the sections and subsections that appear in your presentation, specified with the standard \section and \subsection commands. You may either display all sections and subsections on one slide with \tableofcontents, or display each section at a time on subsequent slides with \tableofcontents[pausesections]. The latter is useful if you want to step through each section and mention what you will discuss.
+
+\begin{frame}
+	\frametitle{Presentation Overview} % Slide title, remove this command for no title
+	
+	\tableofcontents % Output the table of contents (all sections on one slide)
+	%\tableofcontents[pausesections] % Output the table of contents (break sections up across separate slides)
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION BODY SLIDES
+%----------------------------------------------------------------------------------------
+
+\section{Reminders} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
+
+%------------------------------------------------
+
+\subsection{Reminders}
+
+\begin{frame}
+	\frametitle{Reminders}
+ 
+	\begin{itemize}
+    \item Please remember to release the project! Tomorrow is the deadline!
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\subsection{Recording}
+
+\begin{frame}
+	\frametitle{Recording}
+ 
+	\begin{itemize}
+ \item Not Available Yet!
+    % \item Recording for RC-3: \href{https://sjtu.feishu.cn/minutes/obcn81s8v371bg9k42p1228p?from_source=finish_recording}{[Link]}.
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\section{Playbook Review}
+
+\subsection{c4}
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q1: How to draw basic shapes such as circle, square, rectangle?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+    % Circle
+    \textbf{Circle:} \\
+    \texttt{theta = linspace(0, 2*pi, 100); \% Angle values from 0 to 2*pi \\}
+    \texttt{x = cos(theta); \% X coordinates \\}
+    \texttt{y = sin(theta); \% Y coordinates \\}
+    \texttt{plot(x, y); \\}
+    \texttt{axis equal; \% Equal scaling for both axes \\}
+
+    \vspace{0.5cm}
+    
+    % Square
+    \textbf{Square:} \\
+    \texttt{rectangle('Position', [0, 0, 1, 1], 'EdgeColor', 'b'); \\}
+
+    \vspace{0.5cm}
+    
+    % Rectangle
+    \textbf{Rectangle:} \\
+    \texttt{rectangle('Position', [0, 0, 2, 1], 'EdgeColor', 'r'); \\}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q2: How to draw a large dot or a cross as a marker?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Large Dot Marker:} \\
+    \texttt{plot(x, y, 'o', 'MarkerSize', 20, 'MarkerEdgeColor', 'b', 'MarkerFaceColor', 'b');} \\
+    \texttt{title('Large Dot');} \\
+    \texttt{axis equal;} \\
+    
+    \vspace{0.5cm}
+    
+    \textbf{Large Cross Marker:} \\
+    \texttt{plot(x, y, 'x', 'MarkerSize', 20, 'MarkerEdgeColor', 'r');} \\
+    \texttt{title('Large Cross');} \\
+    \texttt{axis equal;}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q3: Explain why data type is important}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+ 
+In programming, a \textbf{data type} is a classification of data that tells the compiler or interpreter how the programmer intends to use the data.
+
+\vspace{0.5cm}
+
+\textbf{Memory Usage:} Different data types allocate different amounts of memory. For instance, an \texttt{int} may use 4 bytes, while a \texttt{float} uses 8 bytes. Efficient selection of data types can reduce memory usage.
+
+\vspace{0.5cm}
+
+\textbf{Operations:} The operations that can be performed on data depending on its type. For example, you can perform arithmetic operations on integers and floating-point numbers, but not on strings or booleans.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q4: Clearly explain what a data type is}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	In programming, a \textbf{data type} refers to a specific classification that defines what type of value a variable can hold and what operations can be performed on that value.
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q5: Fully understand how 2-complement work}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+The 2's complement system uses a fixed number of bits (e.g., 8-bit, 16-bit, 32-bit) to represent both positive and negative integers. The most significant bit (MSB) is used as the sign bit, where 0 represents positive numbers, and 1 represents negative numbers.
+
+\begin{enumerate}
+    \item \textbf{Invert the digits of the binary number (1's complement).}
+    \begin{itemize}
+        \item Change all 0s to 1s and all 1s to 0s.
+        \item This process is called finding the 1's complement.
+    \end{itemize}
+
+    \item \textbf{Add 1 to the result.}
+    \begin{itemize}
+        \item Adding 1 to the inverted number gives the 2's complement.
+    \end{itemize}
+\end{enumerate}
+
+This resulting binary number is the 2's complement, which represents the negative of the original number.\\
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+Let’s take the number -5 and represent it in 8-bit 2's complement.
+
+\begin{enumerate}
+    \item Start with the positive binary representation of 5: \texttt{00000101} (in 8-bit).
+    \item Find the 1's complement by inverting the digits: \texttt{11111010}.
+    \item Add 1 to the result: \texttt{11111010 + 1 = 11111011}.
+\end{enumerate}
+
+So, the 2's complement representation of -5 in 8-bit binary is \texttt{11111011}.
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q6: Can decimal numbers be encoded the same way as integers? Explain.}
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+\textbf{No, decimal numbers (floating-point numbers) cannot be encoded in the same way as integers.}
+
+Decimal numbers have fractional components, which integers cannot represent. To handle decimal values, we use floating-point representation, which involves encoding a number in the form of a \textit{mantissa}, \textit{exponent}, and \textit{sign} (using scientific notation in binary).
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+The most common standard for representing floating-point numbers is the IEEE 754 standard. This standard defines a floating-point number as:
+\[
+N = (-1)^s \times M \times 2^E
+\]
+where:
+\begin{itemize}
+    \item $s$ is the sign bit.
+    \item $M$ is the mantissa (fractional part).
+    \item $E$ is the exponent.
+\end{itemize}
+
+For example, the decimal number 5.75 can be represented in 32-bit IEEE 754 format as:
+\[
+\texttt{01000000101110000000000000000000}
+\]
+This format is very different from how integers are encoded, as it accounts for both the fractional part (mantissa) and the scale (exponent).
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q7: Explain the up and down sides of using arrays of doubles by default in MATLAB.}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+\section*{\textbf{Q7: Explain the Upsides and Downsides of Using Arrays of Doubles by Default in MATLAB}}
+
+\textbf{Upsides:}
+
+\begin{itemize}
+    \item \textbf{Precision:} 
+    MATLAB uses double-precision floating-point numbers (64-bit) by default, which provides high precision for numerical calculations.
+    
+    \item \textbf{Convenience:} 
+    The default usage of double precision allows users to perform a wide range of calculations without worrying about specifying data types manually.
+\end{itemize}
+
+\textbf{Downsides:}
+
+\begin{itemize}
+    \item \textbf{Memory Usage:} 
+    Using arrays of doubles by default can consume more memory than necessary, especially when dealing with large datasets or when high precision is not required.
+
+    \item \textbf{Performance Overhead:} 
+    Double precision can introduce performance overhead in scenarios where calculations could be performed using lower precision (e.g., single precision or integers).
+\end{itemize}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q8: What is type casting?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+\textbf{Type casting} refers to the process of converting a variable from one data type to another. In programming, type casting allows developers to change the data type of a variable explicitly or implicitly, depending on the situation.
+
+\vspace{0.5cm
+}
+\textbf{1. Implicit Type Casting}
+
+For example:
+\begin{itemize}
+    \item In many programming languages, when you combine an \texttt{int} with a \texttt{float}, the \texttt{int} is automatically promoted to a \texttt{float}.
+\end{itemize}
+
+\texttt{a = 5;} \\
+\texttt{b = 3.14;} \\
+\texttt{c = a + b;} \\
+\texttt{\% MATLAB automatically converts 'a' to float}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+
+\textbf{2. Explicit Type Casting}
+It requires the programmer to specify the target data type.
+
+For example:
+\begin{itemize}
+    \item Converting a floating-point number to an integer will result in the loss of the fractional part, and the programmer needs to explicitly tell the program to perform this conversion.
+\end{itemize}
+
+\texttt{a = 3.75;} \\
+\texttt{b = int32(a);} \\
+\texttt{\% Manually cast 'a' to an integer (result is 3)}
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q9: Why shouldn't you use functions such as \texttt{isreal} to exit a loop?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+
+Functions like \texttt{isreal} are used to check whether a given variable or result is a real number, and they return a logical value (true or false).
+
+\texttt{isreal} checks whether the result is real, but due to floating-point precision errors, the loop may continue running indefinitely.
+
+\textit{Example:}
+\begin{itemize}
+    \item Consider an iterative algorithm performing repeated calculations. Even if the expected result is real, slight inaccuracies due to floating-point precision (e.g., \texttt{$1.0 + 1e^{-15}i$}), making \texttt{isreal} return \texttt{false}.
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q10: Detail a good way to use \texttt{isletter}.}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+The function \texttt{isletter} in MATLAB is used to determine whether the characters in a string are alphabetic letters. It returns a logical array where each element corresponds to whether a character in the string is a letter (true) or not (false). 
+
+A good way to use \texttt{isletter} is when you need to process or filter out alphabetic characters from a string, such as in text parsing, data cleaning, or string validation tasks \textbf{Refer to \texttt{rc1.pdf} w2 ex8}.
+
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q11: In \texttt{strcmpi} what is the meaning of the i?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \frametitle{Review: c4}
+
+    The \texttt{i} in \texttt{strcmpi} stands for \textbf{case-insensitive} comparison. This means that when using \texttt{strcmpi} in MATLAB, the function compares two strings while ignoring the case (upper or lower) of the letters. In contrast, \texttt{strcmp} performs a case-sensitive comparison, where the case of each letter must match exactly.
+
+\vspace{0.5cm}
+
+    \textbf{Example:}
+    \texttt{strcmp('Hello', 'hello')}     \% returns 0 (false) \\
+    \hspace{1.75cm} \texttt{strcmpi('Hello', 'hello')}    \% returns 1 (true) \\
+
+\vspace{0.5cm}
+
+    In the first example, \texttt{strcmp} returns \texttt{false} because 'H' and 'h' are different due to case sensitivity. However, \texttt{strcmpi} returns \texttt{true} because it ignores case differences.
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q12: What is difference between strfind and findstr`. Give two examples showing how to best use each of them.}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+
+    \texttt{strfind} and \texttt{findstr} are both used in MATLAB to locate substrings within a string, but they differ in how they handle their inputs and outputs:
+
+    \begin{itemize}
+        \item \texttt{strfind} searches for the occurrence of a substring within a string and returns the starting indices of the matches.
+        \item \texttt{findstr} is a legacy function that works similarly but is more limited. It finds the starting index of one string in another and returns a vector of indices.
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+    \textbf{Example 1: Using \texttt{strfind}} \\
+    \texttt{str = 'ENGR1510J is fun';} \\
+    \texttt{idx = strfind(str, 'fun');} \\
+    \texttt{disp(idx);} \texttt{\% Output: 14} \\
+
+    \vspace{0.5cm}
+    
+    \textbf{Example 2: Using \texttt{findstr}} \\
+    \texttt{str1 = 'MATLAB';} \\
+    \texttt{str2 = 'LA';} \\
+    \texttt{idx = findstr(str2, str1);} \\
+    \texttt{disp(idx);} 
+    \texttt{\% Output: 3}\\
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q13: What is the difference between an ascii and a binary file?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+    \textbf{ASCII File:}
+    \begin{itemize}
+        \item An \texttt{ASCII} (American Standard Code for Information Interchange) file is a plain text file where data is represented in a human-readable form.
+        
+        \item ASCII files can be opened and edited with standard text editors (e.g., Notepad, Vim) because the content consists of readable characters.
+        
+        \item Example: A text file containing the string "Hello World" would store the ASCII values for each letter.
+    \end{itemize}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+    \textbf{Binary File:}
+    \begin{itemize}
+        \item A \texttt{binary} file, on the other hand, stores data in a format that is not human-readable. The data is stored as raw binary data (1s and 0s).
+        \item Binary files are typically opened and processed by specific programs that understand the file format (e.g., image viewers, compilers).
+        \item Example: An image file such as a \texttt{.jpg} or an executable file \texttt{.exe} is stored in binary format.
+    \end{itemize}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q14: What are the benefits of binary files over ascii ones? What about the other way around?}
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+    \textbf{Benefits of Binary Files over ASCII Files}
+
+    \begin{itemize}
+        \item \textbf{Efficiency:} Binary files store data more efficiently, taking up less space on disk for the same amount of information.
+        \item \textbf{Accurate Representation of Complex Data:} Binary files can store complex data structures such as floating-point numbers or machine code exactly as they are represented in memory.
+    \end{itemize}
+
+\vspace{0.5cm}
+    \textbf{Benefits of ASCII Files over Binary Files}
+
+    \begin{itemize}
+        \item \textbf{Human Readability:} ASCII files are easy to read and edit with standard text editors.
+        
+        \item \textbf{Cross-platform Compatibility:} ASCII files are generally more portable across different platforms and systems because they only contain human-readable characters, and almost all systems can handle ASCII text.
+    \end{itemize}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q15: What is a data structure?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+ 
+    A \textbf{data structure} is a way of organizing, managing, and storing data in a computer so that it can be accessed and modified efficiently.
+
+    \begin{itemize}
+        \item \textbf{Organization:} Data structures allow the systematic arrangement of data for better access and management.
+        \item \textbf{Efficiency:} Using appropriate data structures can significantly improve the efficiency of algorithms, especially in terms of time complexity and space complexity.
+        \item \textbf{Flexibility:} Data structures allow for flexible storage and manipulation of different types of data, from simple integers to more complex objects.
+    \end{itemize}
+
+    \textit{Example in MATLAB:}
+    \texttt{complexNum = struct('real', 3, 'imaginary', 4);}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q16: What are the benefits of using data structures?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+    \textbf{1. Efficient Data Management:}  
+    They \textbf{systematically organize data}, making it easier to store, access, and modify large datasets. Proper data structures can \textbf{reduce the complexity} of operations like searching and sorting.
+
+\vspace{0.5cm}
+
+    \textbf{2. Optimized Algorithms:}  
+    The right data structure \textbf{improves algorithm performance}, optimizing time and space complexity. For example, \textbf{hash tables} can reduce search time from $O(n)$ to \textbf{$O(1)$}.
+
+\vspace{0.5cm}
+
+    \textbf{3. Faster Access to Data:}  
+    \textbf{Arrays, trees, and hash tables} allow quick access to data, improving the efficiency of operations like lookups and inserts.
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q17: How to use the struct keyword?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+ 
+ In MATLAB, the \texttt{struct} keyword is used to create structures. A structure can contain different fields, and each field can hold various types of data such as numbers, strings, arrays, or even other structures.
+
+\vspace{0.5cm}
+
+    \subsection*{Creating a Structure}
+    A structure can be created using the \texttt{struct} keyword followed by field names and their corresponding values.
+
+\vspace{0.5cm}
+
+    \textit{Example in MATLAB:} \\
+    
+    \texttt{person = struct('Name', 'HorseCow', 'Age', 30, 'Occupation', 'Professor?');} \\
+    
+    This creates a structure called \texttt{person} with three fields: \texttt{Name}, \texttt{Age}, and \texttt{Occupation}.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q18: How to take advantage of vectorizing loops to access several elements at once?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+ 
+Vectorization in MATLAB allows you to perform operations on entire arrays or vectors without explicitly using loops. 
+
+    \textbf{Using a Loop:} \\
+    \texttt{arr = [1, 2, 3, 4, 5];} \\
+    \texttt{for i = 1:length(arr)} \\
+    \texttt{\ \ \ \ arr(i) = arr(i).*2;} \\
+    \texttt{end}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q19: How to know that max returns two values?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+    It can be found by referring to MATLAB's documentation or by inspecting the output of the \texttt{max} function when called with two output arguments.
+
+    \vspace{0.5cm}
+    
+    When calling \texttt{max} with two outputs, it returns:
+    \begin{itemize}
+        \item The first output is the maximum value in the array.
+        \item The second output is the index (position) of the maximum value.
+    \end{itemize}
+
+    \texttt{arr = [10, 20, 5, 40, 15];} \\
+    \texttt{[maxValue, maxIndex] = max(arr);} \\
+    \texttt{disp(maxValue);}  \texttt{\% Output: 40} \\
+    \texttt{disp(maxIndex);}  \texttt{\% Output: 4}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q20: Why is the ceil function used in the code?}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+    The \texttt{ceil} function in MATLAB is used to round numbers up to the nearest integer. This means that any fractional part of a number is discarded, and the number is rounded up, regardless of how small the fractional part is.
+
+    \texttt{items = 23;} \\
+    \texttt{batchSize = 5;} \\
+    \texttt{numBatches = ceil(items / batchSize);} \texttt{\% Round up to the next integer}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Review: c4}
+
+	\textbf{Q21: Explain the reasoning applied to discover the name of the student with the highest score.}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+
+	To discover the name of the student with the highest score.
+
+    First, you need to have the data organized in two arrays or structures:
+    \begin{itemize}
+        \item One array (or structure field) contains the names of the students.
+        \item Another array (or structure field) contains their corresponding scores.
+    \end{itemize}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: c4}
+    
+    \texttt{scores = [85, 92, 78, 90, 95];} \\
+    \texttt{[maxScore, index] = max(scores);}
+
+    \vspace{0.5cm}
+
+    In this example, \texttt{maxScore} will contain the value \texttt{95}, and \texttt{index} will store \texttt{5}, the position of the highest score in the \texttt{scores} array. 
+    
+    \vspace{0.5cm}
+
+    Once you have the index of the highest score, you can use it to retrieve the corresponding student's name from the array of student names. \\
+
+    \vspace{0.5cm}
+    
+    \texttt{names = \{'Alice', 'Bob', 'Charlie', 'David', 'Eva'\};} \\
+    \texttt{highestScorer = names(index);} \\
+
+    \vspace{0.5cm}
+    
+    Here, \texttt{highestScorer} will contain \texttt{'Eva'}, since she has the highest score.
+
+\end{frame}
+
+%------------------------------------------------
+\section{Worksheets Review}
+
+\begin{frame}
+	\frametitle{Worksheets Review}
+
+	\noindent
+    \textbf{Note:} For some of the questions, we won't directly provide the entire source code. Instead, we will offer ideas, a piece of code, or pseudo-code to help guide you on the worksheet questions.
+
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\subsection{w4}
+
+\begin{frame}
+	\frametitle{Review: w4}
+
+	\textbf{Use the function plot to draw basic geometrical shapes in MATLAB.}
+ 
+\textbf{Circle:} \\
+    \texttt{theta = linspace(0, 2*pi, 100);  \% Angle to 2*pi} \\
+    \texttt{r = 1;  \% Radius of the circle} \\
+    \texttt{x = r * cos(theta);  \% X-coordinates} \\
+    \texttt{y = r * sin(theta);  \% Y-coordinates} \\
+    \texttt{plot(x, y, 'b', 'LineWidth', 2);  \% Plot the circle} \\
+    \texttt{axis equal;  \% Ensure scaling is equal} \\
+
+\vspace{0.5cm}
+
+\textbf{Square:} \\
+    \texttt{x = [-1, 1, 1, -1, -1];  \% square's vertices} \\
+    \texttt{y = [-1, -1, 1, 1, -1];  \% square's vertices} \\
+    \texttt{plot(x, y, 'r', 'LineWidth', 2);  \% Plot the square} \\
+    \texttt{axis equal;  \% Ensure scaling is equal} \\
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: w4}
+ 
+\textbf{Rectangle:} \\
+    \texttt{x = [0, 2, 2, 0, 0];  \% rectangle's vertices} \\
+    \texttt{y = [0, 0, 1, 1, 0];  \% rectangle's vertices} \\
+    \texttt{plot(x, y, 'g', 'LineWidth', 2);  \% Plot the rectangle} \\
+    \texttt{axis equal;  \% Ensure scaling is equal} \\
+    
+\vspace{0.5cm}
+
+\textbf{Triangle:} \\
+    \texttt{x = [0, 1, 2, 0];  \% triangle's vertices} \\
+    \texttt{y = [0, 2, 0, 0];  \% triangle's vertices} \\
+    \texttt{plot(x, y, 'm', 'LineWidth', 2);  \% Plot the triangle} \\
+    \texttt{axis equal;  \% Ensure scaling is equal} \\
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+	\frametitle{Review: w4}
+
+	\textbf{Write an algorithm that prompts the user for an integer and returns its 2-complement.}
+ 
+\begin{itemize}
+        \item \textbf{Step 1:} Prompt the user for an integer input.
+        \item \textbf{Step 2:} Check if the number is positive or negative.
+        \begin{itemize}
+            \item If positive, return the binary representation.
+            \item If negative, proceed with calculating the 2's complement.
+        \end{itemize}
+        \item \textbf{Step 3:} For negative numbers:
+        \begin{itemize}
+            \item Convert the number to its positive equivalent.
+            \item Get the binary representation.
+            \item Invert the bits (1's complement).
+            \item Add 1 to the inverted binary number (2's complement).
+        \end{itemize}
+        \item \textbf{Step 4:} Display the result.
+    \end{itemize}
+
+\textbf{Example 1: Positive Integer Input}
+    \begin{itemize}
+        \item \textbf{Input:} 5
+        \item \textbf{Output:} Binary representation: 101
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: w4 (10 mins)}
+
+	\textbf{Implement the previous algorithm in Matlab.}
+
+\vspace{0.3cm}
+
+    \textbf{1. \texttt{dec2bin(x, bits)}:}  
+    Converts a decimal number \texttt{x} into its binary string representation, with an optional argument to specify the number of bits. \textbf{Refer to RC1 for implementation.}
+    \begin{itemize}
+        \item \texttt{bits} (optional): The number of bits for the binary representation.
+    \end{itemize}
+    
+    \vspace{0.3cm}
+
+    \textbf{2. \texttt{abs(x)}:}  
+    Returns the absolute value of the number \texttt{x}, which is useful when converting negative numbers to positive.
+
+    \vspace{0.3cm}
+
+    \textbf{3. \texttt{bitcmp(x, 'uint8')}:}  
+    Returns the bitwise complement (1's complement) of an integer \texttt{x}, treating it as an unsigned integer of the specified bit length.  
+    \begin{itemize}
+        \item \texttt{'uint8'} (optional): Specifies the unsigned integer type (e.g., \texttt{'uint8'}, \texttt{'uint16'}, \texttt{'uint32'}). This determines the number of bits used for the complement.
+    \end{itemize}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: w4 (10 mins)}
+
+   \begin{itemize}
+        \item First, take the absolute value: \texttt{abs(-5)} gives \texttt{5}.
+        \item Convert to binary: \texttt{dec2bin(5, 8)} gives \texttt{'00000101'}.
+        \item Then, invert the bits: \texttt{'bitcmp(00000101, 'uint8')'} becomes \texttt{'11111010'} (1's complement).
+        \item Finally, add 1: \texttt{11111010 + 1} gives \texttt{11111011}, which is the 2's complement.
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Review: w4}
+
+	\textbf{Define a structure that contains the chapter number, the title of the chapter, and the number of
+slides in this chapter.}
+\texttt{chapterInfo = struct( ...} \\
+    \texttt{'ChapterNumber', 1, ...} \\
+    \texttt{'Title', 'Introduction to MATLAB', ...} \\
+    \texttt{'NumSlides', 25 ...} \\
+    \texttt{);} \\
+
+    \vspace{0.3cm}
+
+    The structure contains:
+    \begin{itemize}
+        \item \textbf{ChapterNumber:} The chapter number.
+        \item \textbf{Title:} The title of the chapter, stored as a string.
+        \item \textbf{NumSlides:} The number of slides in the chapter.
+    \end{itemize}
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: w4 (10 mins)}
+
+	\textbf{Return the title of the longest and shortest chapters in the course as well as how many slides
+compose each of them.}
+
+    \begin{itemize}
+        \item Input: A structure array containing chapter information.
+        \item Initialize: Variables for the longest and shortest chapters.
+        \item Loop through the structure array:
+        \begin{itemize}
+            \item Compare the number of slides in each chapter with the current longest and shortest.
+        \end{itemize}
+        \item Output: Titles and number of slides for both the longest and shortest chapters.
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: w4 (10 mins)}
+
+	\texttt{chapters(1) = struct('ChapterNumber', 1, 'Title', 'Introduction', 'NumSlides', 20); } \\
+    \texttt{chapters(2) = struct('ChapterNumber', 2, 'Title', 'Loops and Conditions', 'NumSlides', 35); } \\
+    \texttt{chapters(3) = struct('ChapterNumber', 3, 'Title', 'Functions', 'NumSlides', 10); } \\
+    \texttt{chapters(4) = struct('ChapterNumber', 4, 'Title', 'Data Structures', 'NumSlides', 50); } \\
+    \vspace{0.3cm}
+
+\texttt{\% Initialize variables for the longest and shortest chapters} \\
+    \texttt{longestChapter = chapters(1);} \\
+    \texttt{shortestChapter = chapters(1);} \\
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: w4 (10 mins)}
+
+    \texttt{for i = 2:length(chapters)} \\
+    \ \ \ \ \texttt{if chapters(i).NumSlides > longestChapter.NumSlides} \\
+    \ \ \ \ \ \ \ \ \texttt{longestChapter = chapters(i);} \\
+    \ \ \ \ \texttt{end} \\
+    \ \ \ \ \texttt{if chapters(i).NumSlides < shortestChapter.NumSlides} \\
+    \ \ \ \ \ \ \ \ \texttt{shortestChapter = chapters(i);} \\
+    \ \ \ \ \texttt{end} \\
+    \texttt{end} \\
+    
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Review: w4 (10 mins)}
+ 
+    \texttt{disp(['Longest Chapter: ', longestChapter.Title, ', Slides: ', ... } \\
+    \texttt{num2str(longestChapter.NumSlides)]);} \\
+    \texttt{disp(['Shortest Chapter: ', shortestChapter.Title, ', Slides: ', ... } \\
+    \texttt{num2str(shortestChapter.NumSlides)]);} \\
+    
+\end{frame}
+
+%------------------------------------------------
+
+
+\section{Reference}
+
+\subsection{Reference}
+
+\begin{frame} % Use [allowframebreaks] to allow automatic splitting across slides if the content is too long
+	\frametitle{References}
+	
+	\begin{itemize}
+    \item Manuel. \textit{c4.pdf}. JI Canvas, 2024. \href{https://jicanvas.com/courses/917/files/folder/lectures?preview=333614}{[Link]}.
+
+    \item Manuel. \textit{w4.pdf}. JI Canvas, 2024. \href{https://jicanvas.com/courses/917/files/folder/worksheets?preview=333632}{[Link]}.
+
+\end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	CLOSING SLIDE
+%----------------------------------------------------------------------------------------
+
+\subsection{Q\&A}
+\begin{frame}[plain] % The optional argument 'plain' hides the headline and footline
+	\begin{center}
+		{\Huge The End}
+		
+		\bigskip\bigskip % Vertical whitespace
+		
+		{\LARGE Questions? Comments?}
+	\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
