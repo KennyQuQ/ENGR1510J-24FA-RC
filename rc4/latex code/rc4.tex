@@ -1,0 +1,642 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 2.0 (March 8, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	11pt, % Set the default font size, options include: 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+	%t, % Uncomment to vertically align all slide content to the top of the slide, rather than the default centered
+	%aspectratio=169, % Uncomment to set the aspect ratio to a 16:9 ratio which matches the aspect ratio of 1080p and 4K screens and projectors
+]{beamer}
+
+\graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
+
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
+
+%----------------------------------------------------------------------------------------
+%	SELECT LAYOUT THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of default layout themes which change the colors and layouts of slides. Below is a list of all themes available, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+%----------------------------------------------------------------------------------------
+%	SELECT COLOR THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of color themes that can be applied to any layout theme to change its colors. Uncomment each of these in turn to see how they change the colors of your selected layout theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{monarca}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{spruce}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%----------------------------------------------------------------------------------------
+%	SELECT FONT THEME & FONTS
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with several font themes to easily change the fonts used in various parts of the presentation. Review the comments beside each one to decide if you would like to use it. Note that additional options can be specified for several of these font themes, consult the beamer documentation for more information.
+
+\usefonttheme{default} % Typeset using the default sans serif font
+%\usefonttheme{serif} % Typeset using the default serif font (make sure a sans font isn't being set as the default font if you use this option!)
+%\usefonttheme{structurebold} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in bold
+%\usefonttheme{structureitalicserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in italic serif
+%\usefonttheme{structuresmallcapsserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in small caps serif
+
+%------------------------------------------------
+
+%\usepackage{mathptmx} % Use the Times font for serif text
+\usepackage{palatino} % Use the Palatino font for serif text
+%\usepackage{helvet} % Use the Helvetica font for sans serif text
+\usepackage[default]{opensans} % Use the Open Sans font for sans serif text
+%\usepackage[default]{FiraSans} % Use the Fira Sans font for sans serif text
+%\usepackage[default]{lato} % Use the Lato font for sans serif text
+
+%----------------------------------------------------------------------------------------
+%	SELECT INNER THEME
+%----------------------------------------------------------------------------------------
+
+% Inner themes change the styling of internal slide elements, for example: bullet points, blocks, bibliography entries, title pages, theorems, etc. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useinnertheme{default}
+\useinnertheme{circles}
+%\useinnertheme{rectangles}
+%\useinnertheme{rounded}
+%\useinnertheme{inmargin}
+
+%----------------------------------------------------------------------------------------
+%	SELECT OUTER THEME
+%----------------------------------------------------------------------------------------
+
+% Outer themes change the overall layout of slides, such as: header and footer lines, sidebars and slide titles. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useoutertheme{default}
+%\useoutertheme{infolines}
+%\useoutertheme{miniframes}
+%\useoutertheme{smoothbars}
+%\useoutertheme{sidebar}
+%\useoutertheme{split}
+%\useoutertheme{shadow}
+%\useoutertheme{tree}
+%\useoutertheme{smoothtree}
+
+%\setbeamertemplate{footline} % Uncomment this line to remove the footer line in all slides
+%\setbeamertemplate{footline}[page number] % Uncomment this line to replace the footer line in all slides with a simple slide count
+
+%\setbeamertemplate{navigation symbols}{} % Uncomment this line to remove the navigation symbols from the bottom of all slides
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title[Computer \& Programming, MATLAB]{ENGR151 Recitation Class 4} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
+
+\subtitle{week 6} % Presentation subtitle, remove this command if a subtitle isn't required
+
+\author[Wu JiaXi]{Wu JiaXi} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
+
+\institute[UM-SJTU joint institute]{UM-SJTU joint institute \\ \smallskip \textit{nina$\_$nhk@sjtu.edu.cn}} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
+
+\date[\today]{Computer $\&$ Programming, MatLab-scripting \\ \today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS SLIDE
+%----------------------------------------------------------------------------------------
+
+% The table of contents outputs the sections and subsections that appear in your presentation, specified with the standard \section and \subsection commands. You may either display all sections and subsections on one slide with \tableofcontents, or display each section at a time on subsequent slides with \tableofcontents[pausesections]. The latter is useful if you want to step through each section and mention what you will discuss.
+
+\begin{frame}
+	\frametitle{Presentation Overview} % Slide title, remove this command for no title
+	
+	\tableofcontents % Output the table of contents (all sections on one slide)
+	%\tableofcontents[pausesections] % Output the table of contents (break sections up across separate slides)
+\end{frame}
+
+
+%----
+
+%\begin{frame}
+%    \frametitle{RC recording}
+ %   \href{https://sjtu.feishu.cn/minutes/obcn9p39e48eb872rv3cum1c?from=from_copylink}{[Press here is the Link]}
+    
+%\end{frame}
+%----
+%----------------------------------------------------------------------------------------
+%	PRESENTATION BODY SLIDES
+%----------------------------------------------------------------------------------------
+
+\section{Playbook Review} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
+
+%------------------------------------------------
+\begin{frame}
+	\textbf{Disclaimer:}\\
+    The answers provided here are not guranteed to be correct. Please
+    use them as a references only and verify with reliable source.
+
+    \smallskip
+
+    \textbf{Note:}\\
+     only go through some questions that we think they are necessary.
+	
+\end{frame}
+
+%------------------------------------------------
+\subsection{C5}
+
+
+
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{C5 Playbook Review}
+	\textbf{What is the benefit of C compared to assembly?}
+
+	\begin{itemize}
+		\item Higher-level abstraction
+		\item less code
+		\item faster development
+	\end{itemize}
+	\textbf{Note:} \href{https://www.investopedia.com/terms/a/assembly-language.asp}{click here for more about assembly}
+
+
+	\smallskip
+
+	\textbf{What is UNIX?}
+
+	UNIX is a multitasking, multi-user operating system.
+
+	serves as the foundation for many modern operating systems, including Linux and macOS.
+	
+	\textbf{Note:} \href{https://www.techtarget.com/searchdatacenter/definition/Unix}{click here for more about unix}
+\end{frame}
+%------------------------------------------------
+
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{C5 Playbook Review}
+	\textbf{Explain what the zero overhead principle is?}
+
+	\quad No additional performance or memory cost is introduced by using higher-level constructs (e.g., classes or functions).
+
+
+	\smallskip
+
+
+	\textbf{What is UNIX?}
+	\begin{itemize}
+		\item UNIX is a multitasking, multi-user operating system.
+	
+		\item serves as the foundation for many modern operating systems, including Linux and macOS.
+	\end{itemize}
+	
+\end{frame}
+%------------------------------------------------
+
+
+
+
+
+\begin{frame}
+	\frametitle{C5 Playbook Review}
+	\textbf{Why Avoid Microsoft Visual C++ in ENGR151}
+	\begin{itemize}
+		\item \textbf{Window centered!!!:}It is primarily designed for Windows applications, which limits portability to other platforms like Linux or macOS.
+		\item Limited Support for Standard Libraries.
+		\item Limited Compiler Compatibility: Your code might work well here, but issues often happen when compiling code with another comipler.
+	\end{itemize}
+	
+	
+	
+	\textbf{Function Prototypes and gcc}
+	\textbf{What is a function prototype?} \\
+	A function prototype declares a function's name, return type, and parameters without implementation, informing the compiler how the function will be called.
+	\begin{itemize}
+		\item Example: \texttt{int add(int a, int b);}
+	\end{itemize}
+	\end{frame}
+%------------------------------------------------
+
+	\begin{frame}
+	\frametitle{C5 Playbook Review}
+	\textbf{What is gcc?} \\
+	gcc is the GNU Compiler Collection used to compile C, C++, and other languages.
+	
+	\textbf{How to compile a C program?} \\
+	Use the command:
+	\begin{center}
+	\texttt{gcc -o (+ gcc flags to maintain good code and easy debugging) program\_name source\_file.c}
+	\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{C5 Playbook Review}
+		\textbf{Variable Scope}
+	\textbf{What is the scope of a variable?}
+	\begin{itemize}
+		\item \textbf{Local scope}: Inside a function or block; accessible only within that block.
+		\item \textbf{Global scope}: Declared outside any function; accessible throughout the program.
+		\item \textbf{Static scope}: Retains value across multiple function calls but accessible only within the same function.
+	\end{itemize}
+	
+	\textbf{Note:} Never use global variable in ENGR151, it is not necessary.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{C5 Playbook Review}
+		\textbf{Common Shortcut Operators}
+	\textbf{Example Program:}
+	\end{frame}
+	
+	\begin{frame}
+	\frametitle{C5 Playbook Review}
+	\textbf{What is a header file?} \\
+	A header file contains function prototypes, macro definitions, and constants for reuse across multiple source files.
+	
+	\textbf{Why include header files at the top?} \\
+	To ensure all necessary declarations and dependencies are available before compiling.
+	
+	\end{frame}
+	
+	\begin{frame}
+	\frametitle{C5 Playbook Review}
+	\textbf{What does \#define do?} \\
+	\#define is used to define macros or constants at compile time.
+	\begin{itemize}
+		\item Example: \texttt{\#define PI 3.14159}
+	\end{itemize}
+	
+	\textbf{How does \#define differ from variables?} \\
+	\begin{itemize}
+		\item do not use memory at runtime
+		\item  the compiler substitutes the value or expression wherever the macro appears.
+	\end{itemize}
+	
+	\textbf{Usages for \#ifdef}
+
+	\begin{itemize}
+		\item Conditional Compilation: Include or exclude code based on whether a symbol is defined.
+		\item Check if necessary libraries and header files are included.
+	\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+	\frametitle{C5 Playbook Review}
+	\textbf{ Advantages and Drawbacks of Macros}
+	\textbf{Advantages:}
+	\begin{itemize}
+		\item Improves code readability and reuse.
+		\item Faster than functions (no runtime overhead).
+	\end{itemize}
+	
+	\textbf{Drawbacks:}
+	\begin{itemize}
+		\item Harder to debug.
+		\item No type checking, leading to potential bugs.
+	\end{itemize}
+	
+	\textbf{Functions as macros:} \\
+	Simple functions that involve small computations, e.g.:
+	\begin{center}
+	\texttt{\#define SQUARE(x) ((x) * (x))}
+	\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{C5 Playbook Review}
+		\textbf{Identifying Mistakes}
+	\textbf{Example:}
+
+	\texttt{
+	int main() \{ \\
+	~~~~ printf("Hello, world!); \\
+	~~~~ return 0; \\
+	\}
+	}
+
+	\textbf{Error:} Missing closing quote. \\
+	\textbf{Message:} \texttt{Try it yourself...}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{C5 Playbook Review}
+	\textbf{Why avoid writing everything in main()?} \\
+	Reduces code readability and makes debugging difficult. Better to break code into modular functions.
+	
+	\textbf{Good function length in ENGR151:} \\
+	Typically, 10–30 lines, focusing on one task.
+	
+	\textbf{Good file length in ENGR151:} \\
+	aournd or less than 100 lines to maintain readability and manageability!
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{C5 Playbook Review}
+		\textbf{How is the original file split?} \\
+	By dividing code into header files and source files.
+	
+	\textbf{What is \#ifndef used for in ans.h?} \\
+	\#ifndef prevents multiple inclusions of the same header file, avoiding redefinition errors.
+	
+	\textbf{How to compile multiple files?} \\
+		use makefile! Try not to use bash command line, messy and hard to change...
+	
+	\textbf{Why include ans.h in both ans\_main.c and ans.c?} \\
+	To ensure both files have consistent declarations and can use shared functions.
+	\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------
+\begin{frame}{}
+	\frametitle{C5 Playbook Review}
+	\textbf{What is a library?}
+
+	A library is a collection of precompiled functions that can be reused in different programs.
+
+	\textbf{Why is -lm necessary when using mathematical functions?}
+	
+	The \texttt{-lm} flag links the math library, which contains functions like \texttt{sqrt()} and \texttt{cos()}.
+  \end{frame}
+  
+
+
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{C5 Playbook Review}
+
+	\textbf{What are all the gcc flags and their importance?}
+	\begin{itemize}
+		\item \textbf{-o}: Specify output filename.
+		\item \textbf{-Wall}: Enable all warnings.
+		\item \textbf{-g}: Include debugging information.
+		\item \textbf{-O}: Optimize the code.
+		\item \textbf{-c}: Compile without linking.
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+
+
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{C5 Playbook Review}
+	\textbf{Why is -lm necessary when using mathematical functions?}
+
+	The \texttt{-lm} flag links the \textbf{math library} (`libm`), which contains functions like \texttt{sqrt()} and \texttt{cos()}. 
+
+	\textbf{What are all the gcc flags and their importance?}
+	\begin{itemize}
+		\item \textbf{-o}: Specify output filename.
+		\item \textbf{-Wall}: Enable all warnings.
+		\item \textbf{-g}: Include debugging information.
+		\item \textbf{-O}: Optimize the code.
+		\item \textbf{-c}: Compile without linking.
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Worksheet Review}
+
+\subsection{W5}
+\frametitle{W5 Review}
+\begin{frame}
+	\textbf{Note:} For some questions, we won't directly provide the entire source code.
+    Instead, we will provide ideas, a piece of code or pseudo-code to help guide you through worksheet questions.
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \frametitle{W5 Review}
+    \textbf{Decode and run the following program.}
+    \vspace{0.5em}
+
+    \texttt{\#define fosho def} \\
+    \texttt{\#define kthx return} \\
+    \texttt{\#define wutz print} \\
+
+	\bigskip
+
+    \texttt{fosho double(x):} \\
+    \texttt{\ \ \ \ kthx x * 2} \\
+
+    \texttt{wutz(double(6))}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \frametitle{W5 Review}
+    \texttt{def double(x):} \\
+    \texttt{~~~~return x * 2} \\
+
+    \texttt{print(double(6))}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \frametitle{W5 Review}
+    \textbf{1. Using chapter 2, write a C program which returns the density of a body given its circumference, and both the distance and period of a body orbiting around it. Read the data from the keyboard.}
+
+\smallskip
+
+    \textbf{2. What variable(s) can be defined using \texttt{\#define}? Adjust your code accordingly.}
+    \begin{itemize}
+        \item Unchangeable variables?
+        \item Constants
+    \end{itemize}
+
+    \smallskip
+    \texttt{Try it out yourself!}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \frametitle{Calculate Density of a Body}
+    \textbf{Code:}
+	
+    \texttt{\#define PI 3.1415927f} \\ 
+    \texttt{\#define G 6.674e-11f // Gravitational constant} \\[7pt]
+    \textbf{// Function to calculate the density of the body} \\ 
+    \texttt{float calculate\_density(float circumference, float distance, float period) \{} \\ 
+    \texttt{~~~~float radius = circumference / (2 * PI);} \\ 
+    \texttt{~~~~float volume = (4.0f / 3.0f) * PI * pow(radius, 3);} \\ 
+    \texttt{~~~~float mass = (4 * PI * PI * pow(distance, 3)) / (G * period * period);} \\ 
+    \texttt{~~~~return mass / volume;} \\ 
+    \texttt{\}}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \frametitle{W5 Review}
+    \textbf{The XOR swap algorithm is an algorithm that swaps two values of distinct variables without using any temporary variable.}
+
+    \smallskip
+
+    \textbf{1. Write a \texttt{\#define SWAP(a,b)} macro to swap two integers \texttt{a} and \texttt{b}.}
+    
+    \smallskip
+	\texttt{Hint: look up how xor can be used}
+
+    \textbf{2. Write a short C function to demonstrate the previous macro.}
+
+    \smallskip
+
+
+\end{frame}
+
+
+%------------------------------------------------
+\begin{frame}
+    \frametitle{XOR Swap Macro}
+    \textbf{Macro Cod e:}
+    
+    \texttt{\#define SWAP(a, b) \textbackslash} \\
+    \texttt{\ \ \ \ \ \ \ \ a = a \^{} b; \textbackslash} \\
+    \texttt{\ \ \ \ \ \ \ \ b = a \^{} b; \textbackslash} \\
+    \texttt{\ \ \ \ \ \ \ \ a = a \^{} b; \textbackslash} \\
+\end{frame}
+
+
+
+
+
+
+
+
+
+\section{Referencing}
+
+\begin{frame} % Use [allowframebreaks] to allow automatic splitting across slides if the content is too long
+	\frametitle{References}
+	
+	\begin{itemize}
+    
+
+    \item Manuel. \textit{c2.pdf}. JI Canvas, 2024. \href{https://jicanvas.com/courses/917/files/folder/lectures?preview=333612}{[Link]}.
+
+    \item Manuel. \textit{c3.pdf}. JI Canvas, 2024. \href{https://jicanvas.com/courses/917/files/folder/lectures?preview=333613}{[Link]}.
+
+    \item Manuel. \textit{w3.pdf}. JI Canvas, 2024. \href{https://jicanvas.com/courses/917/files/folder/worksheets?preview=333631}{[Link]}.
+
+    \item Wang, Yuheng. \textit{rc}. FOCS JI Gitea, 2023. \href{https://focs.ji.sjtu.edu.cn/git/engr151-23fa/course-support/src/branch/master/rc}{[Link]}.
+\end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	CLOSING SLIDE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}[plain] % The optional argument 'plain' hides the headline and footline
+	\begin{center}
+		{\Huge The End}
+		
+		\bigskip\bigskip % Vertical whitespace
+		
+		{\LARGE Questions? Comments?}
+	\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
