@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.10.6)  29 OCT 2024 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.10.6)  1 NOV 2024 00:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -771,22 +771,22 @@ LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./rc4.toc) [2
 
+] [3
+
 ]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 205.
- [3
-
-] [4
+(Font)              scaled to size 10.95pt on input line 203.
+ [4
 
 ] [5
 
+] [6
+
 ]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 281.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 274.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [6
-
-] [7
+) [7
 
 ] [8
 
@@ -799,12 +799,12 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ] [12
 
 ]
-LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 383.
+LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 371.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 383.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 371.
  [13
 
 ] [14
@@ -829,19 +829,17 @@ LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10.95> not available
 
 ] [24
 
-] [25
-
 ]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 624.
- [26
+(Font)              scaled to size 10.95pt on input line 586.
+ [25
 
 ]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 638.
+(Font)              scaled to size 24.88pt on input line 600.
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 638.
- [27
+(Font)              scaled to size 17.28pt on input line 600.
+ [26
 
 ]
 \tf@nav=\write6
@@ -855,21 +853,21 @@ LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/n' will be
 
  (./rc4.aux)
 Package rerunfilecheck Info: File `rc4.out' has not changed.
-(rerunfilecheck)             Checksum: 07EBCB786BFD413A07985DD605FD3D8C;480.
+(rerunfilecheck)             Checksum: 482C1975D4A80CF4CF9DC306086E80BF;480.
  ) 
 Here is how much of TeX's memory you used:
- 22751 strings out of 476091
- 446773 string characters out of 5794081
+ 22747 strings out of 476091
+ 446740 string characters out of 5794081
  1862330 words of memory out of 5000000
- 42560 multiletter control sequences out of 15000+600000
+ 42558 multiletter control sequences out of 15000+600000
  530804 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,497b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}</usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on rc4.pdf (27 pages, 142962 bytes).
+Output written on rc4.pdf (26 pages, 140556 bytes).
 PDF statistics:
- 826 PDF objects out of 1000 (max. 8388607)
- 762 compressed objects within 8 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 799 PDF objects out of 1000 (max. 8388607)
+ 736 compressed objects within 8 object streams
+ 58 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
