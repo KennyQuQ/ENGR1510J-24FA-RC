@@ -20,7 +20,7 @@ Here’s a structured answer to all the questions you’ve listed.
 
 **Explain what the zero overhead principle is.**  
 - The **zero overhead principle** means that no additional performance or memory cost is introduced by using higher-level constructs (e.g., classes or functions) compared to writing the same code manually in a lower-level form (e.g., assembly).  
-- namely you don't introduce the library, class or function that your don't need in your code! wasting and making things
+- namely you don't introduce the library, class or function that your don't need in your code!
 ---
 
 ## **5.1.3** 
