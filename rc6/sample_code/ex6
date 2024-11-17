@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int *test(int *b)
+{ // Updated return type to int*
+    int a;
+    int **c;
+    int ***d;
+
+    a = 4;
+    b = malloc(2 * sizeof(int)); // Allocate memory for `b`
+    if (b == NULL)
+    {
+        perror("Failed to allocate memory");
+        exit(1);
+    }
+
+    *b = a;            // Set first element to `a`
+    *(b + 1) = a << 2; // Set second element to `a` shifted by 2
+
+    c = &b;
+    d = &c;
+    printf("%d, %d\n", *(b + 1), ***d); // Display values
+
+    free(b);   // Free allocated memory for `b`
+    return *c; // Returning `b` (as an int*), the first element of `c`
+}
+
+int main()
+{
+    int b;
+    int *result = test(&b); // Store result from `test`
+    // No need to free `result` as `test` frees the allocated memory
+    return 0;
+}

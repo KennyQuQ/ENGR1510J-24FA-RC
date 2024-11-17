@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Playbook Review}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{C7}{6}{0}{1}
+\beamer@sectionintoc {2}{Worksheet Review}{24}{0}{2}
+\beamer@subsectionintoc {2}{1}{W7}{24}{0}{2}
+\beamer@sectionintoc {3}{Referencing}{40}{0}{3}
